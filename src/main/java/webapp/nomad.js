@@ -25,12 +25,21 @@ console.log(daysOfWeek[2]);
 
 
 //Object
-
+//배열도 포함될 수 있다.
 const junInfo =  {
     name: "sejun",
     age: 27,
-    gender: "Male"
+    gender: "Male",
+    favMovies: ["Along the gods", "LOTR", "Oldboy"]
 }
 console.log(junInfo);
 console.log(junInfo.gender);
+
+//function
+
+function sayHello(name){
+    console.log('Hello!', name);
+}
+
+sayHello("juns");
 
