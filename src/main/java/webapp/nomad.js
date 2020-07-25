@@ -43,3 +43,37 @@ function sayHello(name){
 
 sayHello("juns");
 
+//배열선언
+let arr = new Array();
+let arr = new Array("a","b","c","d", "d");
+let arr = [1,2,3,4];
+
+arr[0] = 1;
+arr[4] = 3;
+
+for(let i = 0; i<5; i++){
+    arr[i] = i;
+}
+
+for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+// push 추가
+
+arr.push("e");
+
+console.log(arr);
+
+//pop 제거
+
+arr.pop();
+
+console.log(arr);
+
+//sort 정렬
+
+arr.sort();
+
+console.log(arr);
+
