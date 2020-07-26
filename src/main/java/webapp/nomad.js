@@ -127,6 +127,3 @@ for(let item of set ) {
 set.delete("KangDongSu");
 console.log("## After delete KangDongSu has: "+ set.has('KangDongSu'));
 
-console.log("## new Array from Set")
-let arr = Array.from(set);
-console.log(arr);
