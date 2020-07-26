@@ -77,3 +77,56 @@ arr.sort();
 
 console.log(arr);
 
+
+//map 
+const map = new Map();
+map.set("2019101","HongGilDong");
+map.set("2019102","KimSaRang");
+map.set("2019103","KandDongSu");
+
+console.log("### Original data: forEach with Arrow")
+map.forEach((value, key) => console.log(key, value));
+
+console.log("### Original data: for-of")
+for(let item of map ) {
+  console.log(item[0],item[1]);
+}
+
+console.log("### Original data: for-of with key, map")
+for(let [key, value] of map ) {
+  console.log(key,value);
+}
+
+console.log("### Original data: map.keys()")
+const keys = map.keys();
+for(let key of keys) {
+  console.log(map.get(key));
+}
+
+console.log("### Map functions")
+console.log("get 201901: "+map.get("2019101"));
+map.delete("2019103")
+console.log("after delete 201903, has : ", map.has("2019103"));
+
+
+//set
+
+const set = new Set();
+set.add("HongGilDong");
+set.add("KimSanRang");
+set.add("KangDongSu");
+
+console.log("## Original Set: forEach")
+set.forEach((value) => console.log(value));
+
+console.log("## Original Set: for-of")
+for(let item of set ) {
+  console.log(item);
+}
+
+set.delete("KangDongSu");
+console.log("## After delete KangDongSu has: "+ set.has('KangDongSu'));
+
+console.log("## new Array from Set")
+let arr = Array.from(set);
+console.log(arr);
