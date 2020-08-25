@@ -45,8 +45,8 @@ sayHello("juns");
 
 //배열선언
 let arr = new Array();
-let arr = new Array("a","b","c","d", "d");
-let arr = [1,2,3,4];
+let arr2 = new Array("a","b","c","d", "d");
+let arr3 = [1,2,3,4];
 
 arr[0] = 1;
 arr[4] = 3;
@@ -126,4 +126,19 @@ for(let item of set ) {
 
 set.delete("KangDongSu");
 console.log("## After delete KangDongSu has: "+ set.has('KangDongSu'));
+console.clear();
+
+const title = document.querySelector("#title");
+const BASE_COLOR = "black";
+const OTHER_COLOR = "blue";
+function handleClick() {
+  const title_color = title.style.color;
+  if (title_color == BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+
+window.addEventListener("click", handleClick);
 
