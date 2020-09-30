@@ -29,4 +29,23 @@ calculator.read();
 alert(calculator.sum(a, b));
 alert(calculator.mul(a, b));
 
+let recipeMap = new Map([
+    ['cucumber', 500],
+    ['tomatoes', 350],
+    ['onion',    50]
+  ]);
+  
+ 
+  for (let vegetable of recipeMap.keys()) {
+    alert(vegetable);
+  }
+  
 
+  for (let amount of recipeMap.values()) {
+    alert(amount);
+  }
+  
+ 
+  for (let entry of recipeMap) { 
+    alert(entry); //
+  }
