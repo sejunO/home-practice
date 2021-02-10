@@ -30,22 +30,12 @@
                 <option value="">서귀포시</option>
             </select>
         </div>
+        <div>
+            테스트 : <input type="text" id="test"/>
+        </div>
         <button type="button" onclick="regist();">등록</button>
     </div>
-    <script>
-        function regist() {
-            alert($(".23").val());
-            alert(document.getElementById("city").value);
-        }
-
-        function changeCity() {
-            let city = $("#city").val();
-            $("#region_02").hide();
-            $("#region_064").hide();
-            $("#region_"+city).show();
-        }
-
-    </script>
+ 
 
 
     <script src="deepening.js"></script>
@@ -56,6 +46,23 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
         integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+        <script>
+            function regist() {
+                alert($(".23").val());
+                alert(document.getElementById("city").value);
+            }
+    
+            function changeCity() {
+                let city = $("#city").val();
+                $("#region_02").hide();
+                $("#region_064").hide();
+                $("#region_"+city).show();
+            }
+    
+            let x = 4;
+            document.getElementById("test").value = x;            
+    
+        </script>
 </body>
 
 </html>
