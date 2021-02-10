@@ -47,5 +47,5 @@ let recipeMap = new Map([
   
  
   for (let entry of recipeMap) { 
-    alert(entry); //
+    alert(entry); 
   }
