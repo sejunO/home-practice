@@ -24,7 +24,6 @@ json = JSON.stringify(rabbit, (key, value) => {
 });
 
 console.log(json);
-console.clear();
 function print(name) {
     console.log(`hello ${name}`);
 }
